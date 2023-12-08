@@ -1,7 +1,10 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { mongoDb } from '@/lib/mongodb';
 
-export default function Home() {
+export default async function Home() {
+  
+  const db = await mongoDb
   return (
     <main className={styles.main}>
       <div className={styles.description}>
