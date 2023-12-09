@@ -1,6 +1,6 @@
 .main {
   display: grid;
-  grid-template-areas: "nav filter" "sort filter" "table filter";
+  grid-template-areas: "nav filter" "sort filter" "tbl filter";
   padding: 10px 10px;
   gap: 10px 10px;
   .nav {
@@ -51,6 +51,17 @@
     }
   }
   .contentContainer{
-    grid-area: table;
+    grid-area: tbl;
+    .th{
+      padding: 10px;
+      border: 1px solid lightgray;
+      color: #22B0C2;
+      background-color: #FFFCFC;
+    }
+    .td{
+      padding: 10px;
+      border: 1px solid lightgray;
+      background-color: #FFFCFC;
+    }
   }
 }
