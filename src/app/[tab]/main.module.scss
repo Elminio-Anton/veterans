@@ -1,0 +1,56 @@
+.main {
+  display: grid;
+  grid-template-areas: "nav filter" "sort filter" "table filter";
+  padding: 10px 10px;
+  gap: 10px 10px;
+  .nav {
+    background-color: white;
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: min-content;
+    gap: 0 10px;
+    .link {
+      background-color: transparent;
+      padding: 21px 45px;
+      border-radius: 10px;
+      border: 1px solid;
+      display: block;
+      width: min-content;
+      height: min-content;
+      white-space: nowrap;
+      text-decoration: none;
+      color: black;
+      &All {
+        border-color: #36b2c2;
+      }
+      &Mailing {
+        border-color: #ef8482;
+      }
+      &Analitycs {
+        border-color: #6ab42d;
+      }
+    }
+    .active {
+      background-color: #11639a;
+      color: white;
+    }
+  }
+  .sortContainer{
+    grid-area: sort;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: min-content;
+    justify-items: end;
+    gap: 0 10px;
+    grid-template-areas: ". 1 .";
+    .select{
+      border: 1px solid #36B2C2;
+      border-radius: 25px;
+      padding: 0px 5px;
+    }
+  }
+  .contentContainer{
+    grid-area: table;
+  }
+}
