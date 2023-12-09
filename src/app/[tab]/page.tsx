@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import style from "./main.module.scss";
-import clientPromise from "@/lib/mongodb";
+import clientPromise from "@/lib/mongodbb";
 
 type Tab = "all" | "mailing" | "analytics";
 
