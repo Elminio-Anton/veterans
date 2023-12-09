@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import style from "./main.module.scss";
 import clientPromise from "@/lib/mongodbb";
-import deleteIcon from "/public"
 
 type Tab = "all" | "mailing" | "analytics";
 
